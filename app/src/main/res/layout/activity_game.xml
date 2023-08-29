@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:background="@color/black">
+
+
+    <TextView
+        android:id="@+id/score_view"
+        android:layout_width="213dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:onClick="onClick"
+        android:text="@string/score"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/back_to_menu"
+        android:layout_width="156dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn2"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="4dp"
+        android:onClick="onClick"
+        android:text="@string/back"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.example.gamesnake.GameView
+        android:id="@+id/game_view"
+        android:layout_width="match_parent"
+        android:layout_height="511dp"
+        android:layout_marginTop="56dp"
+        android:background="#660000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/arrows"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginTop="576dp"
+        android:background="@drawable/back_btn"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/right_arrow"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="236dp"
+            android:layout_marginTop="76dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/arrow_circle_right"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/left_arrow"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/arrow_circle_left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/up_arrow"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/arrow_circle_up"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/down_arrow"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="124dp"
+            android:src="@drawable/arrow_circle_down"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
